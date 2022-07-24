@@ -1,10 +1,11 @@
 import React from 'react'
 import Transactions from "../Components/Transactions"
+import "./Index.css"
 
 export default function Index() {
   return (
     <div>
-        <h2>Index</h2>
+      <br></br>
         <Transactions/>
     </div>
   )

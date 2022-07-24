@@ -6,6 +6,9 @@ export default function Edit() {
     <div>
         <h2>Edit</h2>
         <TransactionEditForm/>
+        <a href={`/transactions`}>
+            <button>Back</button>
+            </a>
     </div>
 
   )

@@ -1,11 +1,10 @@
 import React from 'react'
-import Transaction from "../Components/Transaction"
+import TransactionDetails from '../Components/TransactionDetails'
 
-export default function Show() {
+export default function Show({index}) {
   return (
     <div>
-        <h2>Show</h2>
-        <Transaction/>
+        <TransactionDetails/>
     </div>
   )
 }

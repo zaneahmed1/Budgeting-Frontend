@@ -16,9 +16,16 @@ useEffect(() => {
       .catch((e) => console.error("catch", e));
   }, []);
 
+  const amountsArr = transactions.map((transaction) => Number(transaction.amount))
+  let sum = 0;
+  amountsArr.forEach(amount => {
+    sum += amount;
+    return sum;
+  });
 
   return(
     <div>
+        <h1>Bank Account Total: ${sum}</h1>
          <section>
         <table>
           <tbody>
