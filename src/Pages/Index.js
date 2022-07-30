@@ -4,7 +4,7 @@ import "./Index.css"
 
 export default function Index() {
   return (
-    <div>
+    <div className='transactionstable'>
       <br></br>
         <Transactions/>
     </div>

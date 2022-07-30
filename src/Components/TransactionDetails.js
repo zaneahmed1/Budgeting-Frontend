@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import {useParams, useNavigate } from "react-router-dom";
 import axios from 'axios';
+import "./TransactionDetails.css"
 
 const API = process.env.REACT_APP_API_URL;
 
@@ -27,12 +28,14 @@ const handleDelete = () => {
     }
 
   return (
-    <div>
+    <div className="transactiondetails">
         <h1>{transactions.item_name}</h1>
+        <div>
         <h3>Date: {transactions.date}</h3>
         <h3>Amount: {transactions.amount}</h3>
         <h3>From: {transactions.from}</h3>
         <h3>Category: {transactions.category}</h3>
+        </div>
         <a href={`/transactions`}>
             <button>Back</button>
             </a>
