@@ -26,7 +26,7 @@ export default function TransactionEditForm() {
       .get(`${API}/transactions/${index}`)
       .then((response) => setTransaction(response.data))
       .catch((error) => console.error(error));
-  }, []);
+  }, [index]);
 
   const updateTransaction = () => {
     axios

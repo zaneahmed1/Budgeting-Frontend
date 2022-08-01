@@ -17,7 +17,7 @@ useEffect(
         axios
         .get(`${API}/transactions/${index}`)
                 .then((response) => setTransactions(response.data))
-                .catch((error) => navigate('*'))
+                .catch((error) => navigate('/error'))
     }, [index])
 
 const handleDelete = () => {
